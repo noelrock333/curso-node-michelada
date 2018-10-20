@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <table>
+      <tr>
+        <td>Nombre</td>
+        <td>Edad</td>
+        <td></td>
+      </tr>
+      <% usuarios.forEach(usuario => { %>
+        <tr>
+          <td><%= usuario.nombre %></td>
+          <td><%= usuario.edad %></td>
+          <td>
+            <a href="/user/<%= usuario.id %>/show">Ver</a>
+          </td>
+        </tr>
+      <% }) %>
+    </table>
+  </body>
+</html>
